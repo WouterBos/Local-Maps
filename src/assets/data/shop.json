@@ -1,0 +1,25 @@
+{
+    "points": [
+        {
+            "position": {
+                "lat": 51.78735,
+                "lng": 5.5191
+            },
+            "title": "Landwinkel Boer Spierings"
+        },
+        {
+            "position": {
+                "lat": 51.73356,
+                "lng": 5.40196
+            },
+            "title": "Landwinkel Valenkamp"
+        },
+        {
+            "position": {
+                "lat": 51.74392,
+                "lng": 5.6747
+            },
+            "title": "Biologisch Tuinbouwbedrijf de Twee Linden"
+        }
+    ]
+}
