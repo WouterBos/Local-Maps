@@ -1,0 +1,25 @@
+.mapTitle {
+    position: fixed;
+    top: 1em;
+    left: 1em;
+    z-index: 10;
+    display: inline-block;
+    margin: 0;
+    border-radius: 1em;
+    padding: .2em .5em .2em;
+    color: #fff;
+    font-size: 1em;
+    font-weight: normal;
+    background: rgba(0,0,0,0.6);
+}
+
+.mapSelector {
+    border-width: 0;
+    color: #fff;
+    font-size: 1.3em;
+    background: none;
+}
+
+.mapSelector option {
+    color: #000;
+}

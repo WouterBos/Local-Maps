@@ -1,0 +1,5 @@
+<h1 class="mapTitle">
+  <select class="mapSelector" (change)="onMapSelect($event)">
+    <option *ngFor="let map of maps" [value]="map.id">{{map.title}}</option>
+  </select>
+</h1>

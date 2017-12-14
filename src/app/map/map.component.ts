@@ -16,7 +16,8 @@ export class MapComponent implements OnInit {
   infoWindow: google.maps.InfoWindow;
   map: google.maps.Map;
 
-  constructor(private http: Http, private mapOverlaysService: MapOverlaysService) {
+  constructor(private http: Http,
+              private mapOverlaysService: MapOverlaysService) {
   }
 
   setMap(event) {
@@ -24,7 +25,7 @@ export class MapComponent implements OnInit {
   }
 
   getData(): void {
-    this.mapOverlaysService.getData().subscribe((overlays: google.maps.Marker[]) => {
+    this.mapOverlaysService.getData('assets/data/shop.json').subscribe((overlays: google.maps.Marker[]) => {
       let bounds = new google.maps.LatLngBounds();
 
       this.overlays = overlays;
@@ -45,8 +46,9 @@ export class MapComponent implements OnInit {
       zoom: 15,
       mapTypeControlOptions: {
         style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
-        position: google.maps.ControlPosition.LEFT_BOTTOM
+        position: google.maps.ControlPosition.RIGHT_TOP
       },
+      fullscreenControl: false
     };
     this.getData();
     this.infoWindow = new google.maps.InfoWindow();

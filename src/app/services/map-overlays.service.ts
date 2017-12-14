@@ -10,8 +10,8 @@ export class MapOverlaysService {
   constructor(private http: Http) {
   }
 
-  public getData(): Observable<google.maps.Marker[]> {
-    return this.http.get('assets/data/shop.json').map((res: Response) => {
+  public getData(url: string): Observable<google.maps.Marker[]> {
+    return this.http.get(url).map((res: Response) => {
       let overlays: google.maps.Marker[] = [];
       (<any>res.json().points).map(item => {
         overlays.push(

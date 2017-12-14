@@ -6,18 +6,21 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { MapComponent } from './map/map.component';
 import { MapOverlaysService } from './services/map-overlays.service';
+import { MapsService } from './services/maps.service';
+import { MapControlsComponent } from './map-controls/map-controls.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MapComponent
+    MapComponent,
+    MapControlsComponent
   ],
   imports: [
     BrowserModule,
     GMapModule,
     HttpModule
   ],
-  providers: [MapOverlaysService],
+  providers: [MapOverlaysService, MapsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
