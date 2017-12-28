@@ -4,6 +4,7 @@ import { GMapModule } from 'primeng/primeng';
 import { } from '@types/googlemaps';
 import { MapData } from '../models/map-data';
 import { MapOverlaysService } from '../services/map-overlays.service';
+import { MapsService } from '../services/maps.service';
 
 @Component({
   selector: 'app-map',
@@ -17,15 +18,16 @@ export class MapComponent implements OnInit {
   map: google.maps.Map;
 
   constructor(private http: Http,
-              private mapOverlaysService: MapOverlaysService) {
+              private mapOverlaysService: MapOverlaysService,
+              private mapsService: MapsService) {
   }
 
-  setMap(event) {
+  onMapReady(event) {
     this.map = event.map;
   }
 
-  getData(): void {
-    this.mapOverlaysService.getData('assets/data/shop.json').subscribe((overlays: google.maps.Marker[]) => {
+  getData(url: string): void {
+    this.mapOverlaysService.getData(url).subscribe((overlays: google.maps.Marker[]) => {
       let bounds = new google.maps.LatLngBounds();
 
       this.overlays = overlays;
@@ -50,9 +52,16 @@ export class MapComponent implements OnInit {
       },
       fullscreenControl: false
     };
-    this.getData();
+    this.mapsService.activeMap$.subscribe(activeMap => {
+      this.setMap();
+    });
+    this.setMap();
+  }
+
+  setMap() {
+    this.getData(this.mapsService.getMaps()[this.mapsService.getActiveMap()].url);
     this.infoWindow = new google.maps.InfoWindow();
-  }  
+}
 
   handleOverlayClick(event) {
     let isMarker = event.overlay.getTitle != undefined;

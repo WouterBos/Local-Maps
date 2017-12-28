@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { MapsService } from '../services/maps.service';
-import { Maps } from '../models/interface'
+import { Map } from '../models/interface'
 
 @Component({
   selector: 'app-map-controls',
@@ -10,11 +10,12 @@ import { Maps } from '../models/interface'
 })
 export class MapControlsComponent implements OnInit {
   title = 'Shoppen bij de boer';
-  maps: Maps[];
+  maps: Map[];
   
   public constructor(private pageTitle: Title, private mapsService: MapsService) {
     this.maps = this.mapsService.getMaps();
-    this.showMap(this.maps[0].id, this.maps[0].title);
+    let active = this.mapsService.getActiveMap();
+    this.showMap(this.maps[active].id, this.maps[active].title);
   }
 
   ngOnInit() {
@@ -24,6 +25,7 @@ export class MapControlsComponent implements OnInit {
     this.maps.map(m => {
       if (m.id == event.target.value) {
         this.showMap(m.id, m.title);
+        this.mapsService.setActiveMap(m.id);
       }
     })
   }
