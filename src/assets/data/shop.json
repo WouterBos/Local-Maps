@@ -5,21 +5,65 @@
                 "lat": 51.78735,
                 "lng": 5.5191
             },
-            "title": "Landwinkel Boer Spierings"
+            "type": "shop",
+            "title": "Landwinkel - Boer Spierings",
+            "address": "Oijenseweg 284, 5346 JG Oss",
+            "url": "boerspierings.nl"
         },
         {
             "position": {
                 "lat": 51.73356,
                 "lng": 5.40196
             },
-            "title": "Landwinkel Valenkamp"
+            "type": "shop",
+            "title": "Landwinkel - Valenkamp",
+            "address": "Kruisstraat 58, 5249 PA Rosmalen",
+            "url": "www.landwinkelvalenkamp.nl"
         },
         {
             "position": {
                 "lat": 51.74392,
                 "lng": 5.6747
             },
-            "title": "Biologisch Tuinbouwbedrijf de Twee Linden"
+            "type": "shop",
+            "title": "Winkel - Biologisch Tuinbouwbedrijf de Twee Linden",
+            "address": "Schaijksestraat 17, 5375 KC Reek",
+            "url": "www.2linden.nl"
+        },
+        {
+            "position": {
+                "lat": 51.84411,
+                "lng": 5.55241
+            },
+            "type": "machine",
+            "title": "Fruitautomaat - Theunissen & Peters Fruitbedrijf"
+        },
+        {
+            "position": {
+                "lat": 51.7809051,
+                "lng": 5.5622483
+            },
+            "type": "machine",
+            "title": "Automaat met vrije uitloop eieren - Chris van Erp",
+            "address": "Valendonkstraat 12, 5351 NE Berghem"
+        },
+        {
+            "position": {
+                "lat": 51.78051,
+                "lng": 5.56367
+            },
+            "type": "machine",
+            "title": "Paddenstoelenautomaat - Van de Vorle",
+            "address": "Achterschaijkstraat 16, 5351 NB Berghem",
+            "url": "www.vande-vorle.nl"
+        },
+        {
+            "position": {
+                "lat": 51.7745468,
+                "lng": 5.6060616
+            },
+            "type": "machine",
+            "title": "Biologische ijsjesautomaat - Kolluks Hofke"
         }
     ]
 }
