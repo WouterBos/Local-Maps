@@ -22,3 +22,6 @@ Before running the tests make sure you are serving the app via `ng serve`.
 ## Copyright
 
 - Map icon by Pundimon: https://thenounproject.com/search/?q=map&i=1210212 - UNUSED
+- Shopping Cart by Mushu from the Noun Project
+- Vending machine by Dan Hetteix from the Noun Project
+- Stall by Chanut is Industries from the Noun Project

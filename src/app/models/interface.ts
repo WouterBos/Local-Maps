@@ -11,7 +11,9 @@ export interface PointData {
 export interface Point {
     position: Position;
     type: string;
-    title: string;
+    title?: string;
+    id: string;
+    pointsTo: string[];
     address?: string;
     url?: string;
 }

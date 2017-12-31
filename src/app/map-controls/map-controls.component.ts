@@ -10,7 +10,6 @@ import { ActivatedRoute, Router } from '@angular/router';
   styleUrls: ['./map-controls.component.css']
 })
 export class MapControlsComponent implements OnInit {
-  title = 'Shoppen bij de boer';
   maps: Map[];
   activeId: string;
   

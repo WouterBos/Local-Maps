@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { Http, Response } from '@angular/http';
 import { GMapModule } from 'primeng/primeng';
 import { } from '@types/googlemaps';
-import { MapData } from '../models/map-data';
 import { MapOverlaysService } from '../services/map-overlays.service';
 import { MapsService } from '../services/maps.service';
 
@@ -68,8 +67,10 @@ export class MapComponent implements OnInit {
     
     if(isMarker) {
       let title = event.overlay.getTitle();
-      this.infoWindow.setContent('' + title + '');
-      this.infoWindow.open(event.map, event.overlay);
+      if (title) {
+        this.infoWindow.setContent('' + title + '');
+        this.infoWindow.open(event.map, event.overlay);
+      }
     }
   }  
 }

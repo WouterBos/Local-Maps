@@ -8,7 +8,7 @@
             "type": "shop",
             "title": "Landwinkel - Boer Spierings",
             "address": "Oijenseweg 284, 5346 JG Oss",
-            "url": "boerspierings.nl"
+            "url": "http://boerspierings.nl"
         },
         {
             "position": {
@@ -18,7 +18,7 @@
             "type": "shop",
             "title": "Landwinkel - Valenkamp",
             "address": "Kruisstraat 58, 5249 PA Rosmalen",
-            "url": "www.landwinkelvalenkamp.nl"
+            "url": "http://www.landwinkelvalenkamp.nl"
         },
         {
             "position": {
@@ -26,9 +26,9 @@
                 "lng": 5.6747
             },
             "type": "shop",
-            "title": "Winkel - Biologisch Tuinbouwbedrijf de Twee Linden",
+            "title": "Biologisch Tuinbouwbedrijf de Twee Linden",
             "address": "Schaijksestraat 17, 5375 KC Reek",
-            "url": "www.2linden.nl"
+            "url": "https://www.2linden.nl/"
         },
         {
             "position": {
@@ -36,34 +36,75 @@
                 "lng": 5.55241
             },
             "type": "machine",
-            "title": "Fruitautomaat - Theunissen & Peters Fruitbedrijf"
+            "title": "Fruit - Theunissen & Peters Fruitbedrijf",
+            "address": "Mekkersteeg 3, Horssen",
+            "url": "http://www.theunissenpeters.nl"
         },
         {
             "position": {
-                "lat": 51.7809051,
-                "lng": 5.5622483
+                "lat": 51.780237,
+                "lng": 5.570230
             },
             "type": "machine",
-            "title": "Automaat met vrije uitloop eieren - Chris van Erp",
+            "title": "Vrije uitloop eieren - Chris van Erp",
             "address": "Valendonkstraat 12, 5351 NE Berghem"
         },
         {
             "position": {
-                "lat": 51.78051,
-                "lng": 5.56367
+                "lat": 51.780317,
+                "lng": 5.563361
             },
             "type": "machine",
-            "title": "Paddenstoelenautomaat - Van de Vorle",
+            "title": "Paddenstoelen - Van de Vorle",
             "address": "Achterschaijkstraat 16, 5351 NB Berghem",
-            "url": "www.vande-vorle.nl"
+            "url": "http://www.vande-vorle.nl"
         },
         {
             "position": {
-                "lat": 51.7745468,
-                "lng": 5.6060616
+                "lat": 51.774174,
+                "lng": 5.611069
             },
             "type": "machine",
-            "title": "Biologische ijsjesautomaat - Kolluks Hofke"
+            "title": "Biologische ijsjes - Kolluks Hofke",
+            "address": "Koolwijksestraat 18, 5373 KB Herpen",
+            "url": "https://kollukshofke.weebly.com"
+        },
+        {
+            "position": {
+                "lat": 51.79547,
+                "lng": 5.49764
+            },
+            "type": "stall",
+            "title": "Eieren",
+            "address": "Rotsestraat 6, 5395 TD Teeffelen"
+        },
+        {
+            "position": {
+                "lat": 51.81729,
+                "lng": 5.46007
+            },
+            "type": "stall",
+            "title": "Eieren",
+            "address": "Molendijk 24, Alphen"
+        },
+        {
+            "position": {
+                "lat": 51.73614,
+                "lng": 5.5547
+            },
+            "type": "stall",
+            "title": "Groenten - Landerij VanTosse",
+            "address": "Tolstraat 3, 5342 NH Oss",
+            "url": "http://www.landerijvantosse.nl"
+        },
+        {
+            "position": {
+                "lat": 51.82123,
+                "lng": 5.52073
+            },
+            "type": "stall",
+            "address": "Berghuizen 34, 6627 KB Maasbommel",
+            "title": "Honing"
         }
     ]
 }
